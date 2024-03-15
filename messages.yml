@@ -1,0 +1,72 @@
+#messages types : (message, popup, title, tip)
+# \n pour sauter les lignes.
+# Laissez un message vide pour rien ne mettre
+
+others:
+  no-permission:
+    messageType: "message"
+    message: "§cVous n'avez pas la permission pour la commande {COMMAND}"
+  target-not-online:
+    messageType: "message"
+    message: "§cLe joueur {TARGET} n'est pas connecté"
+  command-not-enabled:
+    messageType: "message"
+    message: "§cLa commande est désactivée"
+
+leagues:
+  rankup:
+    messageType: "title"
+    message: "§l§8» §r{league} §l§8«§r\n§7Félicitations, vous avez été promu au rang {league} !"
+  rankdown:
+    messageType: "title"
+    message: "§l§8» §r{league} §l§8«§r\n§7Dommage, vous avez été rétrogradé au rang {league} !"
+  gain-elo:
+    messageType: "message"
+    message: "§fVous venez de gagner §a{eloToAdd} elo(s) §fen tuant §a{player} §f!"
+  loose-elo:
+    messageType: "message"
+    message: "§fVous venez de perdre §a{eloToReduce} elo(s) §fen succombant face à §e{damager} §f!"
+  my-elo:
+    messageType: "message"
+    message: "§fVous possédez §a{elo} elo(s) §fet vous faites parti de la ligue {league} §f!"
+  show-elo:
+    messageType: "message"
+    message: "§fLe joueur §a{player} §fpossède §a{elo} elo(s) §fet fait parti de la ligue {league} §f!"
+  elo-modified:
+    messageType: "message"
+    message: "§fLe joueur §a{PLAYER} §fa désormais §a{ELO} elos"
+  elo-added:
+    messageType: "message"
+    message: "§fVous avez bien ajouté §a{ELO} elo(s) §fà §a{PLAYER}"
+  elo-reduced:
+    messageType: "message"
+    message: "§fVous avez bien réduit §a{ELO} elo(s) §fà §a{PLAYER}"
+  top-header:
+    messageType: "message"
+    message: "§l§a» §r§fListe des joueurs ayant le plus d'elos §8(§fPage {page}/{pageMax}§8) §l§a«§r\n"
+  top:
+    messageType: "message"
+    message: "§a#{position}. §f{player} §8(§f{elo}§8) §8[{league}§8]\n"
+
+combatlogger:
+  combat:
+    messageType: "message"
+    message: "[§a!§f] Vous êtes maintenant en combat pendant {s} seconde(s), ne vous déconnectez pas ou vous serez puni"
+  expired:
+    messageType: "message"
+    message: "[§a!§f] Vous n'êtes plus en combat"
+  no-command:
+    messageType: "message"
+    message: "[§a!§f] §cVous ne pouvez pas éxecuter la commande {COMMAND} en étant en combat"
+  #message en permanence pour afficher le temps du combat
+  notice:
+    messageType: "popup"
+    message: "[§a!§f] Combat {s} seconde(s), ne vous déconnectez pas ou vous serez puni"
+
+commands:
+  ffa:
+    messageType: "title"
+    message: "Ffa\n§7Vous avez bien été téléporté"
+  spawn:
+    messageType: "title"
+    message: "Spawn\n§7Vous avez bien été téléporté"

@@ -1,0 +1,25 @@
+world:
+  name: 'kitffa'
+  #on join
+  instantTp: false
+
+combatlogger:
+  combat-time: 10
+  updatePlayerCombat: true
+  killOnDisconnectCombat: true
+  #permission pour bypass : kitffa.permissions.combatlogger.bypass
+  banned-commands:
+    - "tp"
+    - "refill"
+    - "warp"
+    - "tpa"
+    - "spawn"
+    - "spawntp"
+    - "hub"
+    - "f"
+    - "hubtp"
+    - "spawntp"
+    - "shop"
+    - "lobby"
+    - "lobbytp"
+    - "rekit"

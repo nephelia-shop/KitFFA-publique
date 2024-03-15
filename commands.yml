@@ -1,0 +1,62 @@
+unregister-commands:
+  - "suicide"
+  - "me"
+
+#Les permissions se trouvent dans plugin.yml
+#Ne touchez pas les index (ffa, elo...)
+commands:
+  ffa:
+    name: "ffa"
+    enabled: true
+    description: "Se téléporter au ffa"
+    usage: "/ffa"
+    aliases:
+      - "kitffa"
+    position:
+      x: 256
+      y: 4
+      z: 256
+      world: "kitffa"
+  elo:
+    name: "elo"
+    enabled: true
+    description: "Afficher votre elo"
+    usage: "/elo"
+    aliases:
+      - "myelo"
+  setelo:
+    enabled: true
+    description: "Modifier l'elo d'un joueur"
+    usage: "/setelo (player) (elos)"
+  addelo:
+    name: "addelo"
+    enabled: true
+    description: "Ajouter de l'elo à un joueur"
+    usage: "/addelo (player) (elos)"
+  reduceelo:
+    name: "reduceelo"
+    enabled: true
+    description: "Réduire l'elo d'un joueur"
+    usage: "/reduceelo (player) (elos)"
+  topelo:
+    name: "topelo"
+    enabled: true
+    description: "Afficher le top elo"
+    usage: "/topelo"
+  topeloentity:
+    name: "topeloentity"
+    enabled: true
+    description: "Spawn le top elo entity"
+    usage: "/topeloentity"
+  spawn:
+    name: "spawn"
+    enabled: true
+    description: "Se téléporter au spawn"
+    usage: "/spawn"
+    aliases:
+      - "hub"
+    position:
+      x: 1
+      y: 7
+      z: 234
+      world: 'world'
