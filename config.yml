@@ -1,3 +1,14 @@
+database:
+  type: sqlite
+  sqlite:
+    file: "kitffa.sqlite"
+  mysql:
+    host: localhost
+    username: root
+    password: ""
+    schema: "endiorite"
+  worker-limit: 1
+
 world:
   name: 'kitffa'
   #on join

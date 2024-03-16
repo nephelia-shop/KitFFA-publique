@@ -63,6 +63,29 @@ combatlogger:
     messageType: "popup"
     message: "[§a!§f] Combat {s} seconde(s), ne vous déconnectez pas ou vous serez puni"
 
+moderation:
+  player-muted:
+    messageType: "message"
+    message: "§aVous avez bien mute {TARGET} pour {RAISON} pendant {DAY} jour(s), {HOUR} heure(s), {MINUTE} minute(s) et {SECONDE} seconde(s)"
+  player-already-muted:
+    messageType: "message"
+    message: "§cLe joueur {TARGET} est déjà mute"
+  mutelist-header:
+    messageType: "message"
+    message: "§7- §fListe des joueurs mute :\n"
+  mutelist-mute:
+    messageType: "message"
+    message: "§7- §6{NAME} §fpour §6{RAISON} §fpar §6{STAFF} §fpendant §6{DAY} jour(s), {HOUR} heure(s), {MINUTE} minute(s) et {SECOND} seconde(s)\n"
+  player-unmuted:
+    messageType: "message"
+    message: "§aVous avez bien unmute {TARGET}"
+  player-isnt-mute:
+    messageType: "message"
+    message: "§c{TARGET} n'est pas mute"
+  mute:
+    messageType: "message"
+    message: "§cVous êtes mute pendant §6{DAY} jour(s), {HOUR} heure(s), {MINUTE} minute(s), {SECOND} seconde(s) §cpar §6{STAFF} §cpour §6{RAISON}"
+
 commands:
   ffa:
     messageType: "title"
