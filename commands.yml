@@ -1,6 +1,10 @@
 unregister-commands:
   - "suicide"
   - "me"
+  - "ban"
+  - "ban-ip"
+  - "pardon"
+  - "banlist"
 
 #Les permissions se trouvent dans plugin.yml
 #Ne touchez pas les index (ffa, elo...)
@@ -27,17 +31,17 @@ commands:
   setelo:
     enabled: true
     description: "Modifier l'elo d'un joueur"
-    usage: "/setelo (player) (elos)"
+    usage: "/setelo (joueur) (elos)"
   addelo:
     name: "addelo"
     enabled: true
     description: "Ajouter de l'elo à un joueur"
-    usage: "/addelo (player) (elos)"
+    usage: "/addelo (joueur) (elos)"
   reduceelo:
     name: "reduceelo"
     enabled: true
     description: "Réduire l'elo d'un joueur"
-    usage: "/reduceelo (player) (elos)"
+    usage: "/reduceelo (joueur) (elos)"
   topelo:
     name: "topelo"
     enabled: true
@@ -60,3 +64,18 @@ commands:
       y: 7
       z: 234
       world: 'world'
+  mute:
+    name: "mute"
+    enabled: true
+    description: "Mute un joueur"
+    usage: "/mute (joueur) (raison) (jour) (heure) (minute) (seconde)"
+  mutelist:
+    name: "mutelist"
+    enabled: true
+    description: "Afficher la liste des joueurs mute"
+    usage: "/mutelist"
+  unmute:
+    name: "unmute"
+    enabled: true
+    description: "Unmute un joueur mute"
+    usage: "/unmute (joueur)"
