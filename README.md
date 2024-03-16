@@ -43,16 +43,19 @@ Celle-ci nécessite :
 - Elo perdu par mort -> `elo-per-death: 10`
 
 ### Commandes : Configurables
-| Commande        | Description                                                          | Permission                               |
-|-----------------|----------------------------------------------------------------------|------------------------------------------|
-| `/elo`          | Afficher votre elo ou l'elo d'un joueur ainsi que sa league          | kitffa.permissions.commands.elo          |
-| `/addelo`       | Ajouter des elos à un joueur                                         | kitffa.permissions.commands.addelo       |
-| `/reduceelo`    | Réduire l'elo d'un joueur                                            | kitffa.permissions.commands.reduceelo    |
-| `/setelo`       | Modifier les elos d'un joueur                                        | kitffa.permissions.commands.setelo       |
-| `/topelo `      | Afficher le top                                                      | kitffa.permissions.commands.topelo       |
-| `/topeloentity` | Modifier l'entité qui affiche le top                                 | kitffa.permissions.commands.topeloentity |
-| `/ffa`          | Se téléporter au ffa (position configurable dans le `commands.yml`   | kitffa.permissions.commands.ffa          |
-| `/spawn`        | Se téléporter au spawn (position configurable dans le `commands.yml` | kitffa.permissions.commands.spawn        |
+| Commande        | Description                                                          | Permission                                 |
+|-----------------|----------------------------------------------------------------------|--------------------------------------------|
+| `/elo`          | Afficher votre elo ou l'elo d'un joueur ainsi que sa league          | `kitffa.permissions.commands.elo`          |
+| `/addelo`       | Ajouter des elos à un joueur                                         | `kitffa.permissions.commands.addelo `      |
+| `/reduceelo`    | Réduire l'elo d'un joueur                                            | `kitffa.permissions.commands.reduceelo`    |
+| `/setelo`       | Modifier les elos d'un joueur                                        | `kitffa.permissions.commands.setelo`       |
+| `/topelo `      | Afficher le top                                                      | `kitffa.permissions.commands.topelo`       |
+| `/topeloentity` | Modifier l'entité qui affiche le top                                 | `kitffa.permissions.commands.topeloentity` |
+| `/ffa`          | Se téléporter au ffa (position configurable dans le `commands.yml`   | `kitffa.permissions.commands.ffa`          |
+| `/spawn`        | Se téléporter au spawn (position configurable dans le `commands.yml` | `kitffa.permissions.commands.spawn`        |
+| `/mute`         | Permet de mute un joueur                                             | `kitffa.permissions.command.mute`          |
+| `/unmute`       | Permet d'unmute un joueur                                            | `kitffa.permissions.command.unmute`        |
+| `/mutelist`     | Affiche la liste des joueurs mute                                    | `kitffa.permissions.command.mutelist`      |
 
 Vous pouvez aussi supprimer des commands dans le `config.yml`, en suivant cette liste :
 ```yaml
@@ -78,6 +81,15 @@ combatlogger:
     - "warp"
     - "tpa"
     - "spawn"
+    - "spawntp"
+    - "hub"
+    - "f"
+    - "hubtp"
+    - "spawntp"
+    - "shop"
+    - "lobby"
+    - "lobbytp"
+    - "rekit"
 ```
 - `combat-time` : Durée du combat logger
 - `updatePlayerCombat` : Option à activer pour afficher le temps du combat logger au joueur constamment **configurable sur `messages.yml`**
@@ -85,3 +97,6 @@ combatlogger:
 - `banned-commands` : Commandes interdites à éxecuter en plein combat
 
 *Il est possible de bypass le combat logger avec la permission `kitffa.permissions.combatlogger.bypass` trouvable sur `plugin.yml`*
+### Modération :
+#### Mute:
+Les commandes **(mute, unmute, mutelist)** sont disponibles et sont **configurables** dans le fichier `commands.yml` ainsi que les **messages** dans `message.yml`
