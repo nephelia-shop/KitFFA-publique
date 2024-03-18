@@ -3,6 +3,8 @@
     <p>Créez le meilleur KitFFA à partir de Nephelia Shop</p>
 </div>
 
+--------------------
+
 # Installation
 1. Vous devez mettre le plugin en .phar [.phar](https://pmt.mcpe.fun/create/)/en dossier avec le plugin [devtools](https://poggit.pmmp.io/p/DevTools/) dans le dossier **plugins**.
 2. Installez le [pack](https://github.com/tedo0627/InventoryUIResourcePack/releases/) pour les inventaires, et mettez-le dans le dossier `resource_packs`.
@@ -53,9 +55,13 @@ Celle-ci nécessite :
 | `/topeloentity` | Modifier l'entité qui affiche le top                                 | `kitffa.permissions.commands.topeloentity` |
 | `/ffa`          | Se téléporter au ffa (position configurable dans le `commands.yml`   | `kitffa.permissions.commands.ffa`          |
 | `/spawn`        | Se téléporter au spawn (position configurable dans le `commands.yml` | `kitffa.permissions.commands.spawn`        |
-| `/mute`         | Permet de mute un joueur                                             | `kitffa.permissions.command.mute`          |
-| `/unmute`       | Permet d'unmute un joueur                                            | `kitffa.permissions.command.unmute`        |
-| `/mutelist`     | Affiche la liste des joueurs mute                                    | `kitffa.permissions.command.mutelist`      |
+| `/mute`         | Permet de mute un joueur                                             | `kitffa.permissions.commands.mute`         |
+| `/unmute`       | Permet d'unmute un joueur                                            | `kitffa.permissions.commands.unmute`       |
+| `/mutelist`     | Affiche la liste des joueurs mute                                    | `kitffa.permissions.commands.mutelist`     |
+| `/ban`          | Bannir un joueur avec une durée                                      | `kitffa.permissions.commands.ban`          |
+| `/banperm`      | Bannir un joueur définitivement                                      | `kitffa.permissions.commands.banperm`      |
+| `/bablist`      | Affiche la liste des joueurs bannis                                  | `kitffa.permissions.commands.banlist`      |
+| `/unban`        | Débannir un joueur                                                   | `kitffa.permissions.commands.unban`        |
 
 Vous pouvez aussi supprimer des commands dans le `config.yml`, en suivant cette liste :
 ```yaml
@@ -100,3 +106,5 @@ combatlogger:
 ### Modération :
 #### Mute:
 Les commandes **(mute, unmute, mutelist)** sont disponibles et sont **configurables** dans le fichier `commands.yml` ainsi que les **messages** dans `message.yml`
+#### Ban:
+Les commandes **(ban, banperm, banlist, unban)** sont disponibles et sont **configurables** dans le fichier `commands.yml` ainsi que les **messages** dans `message.yml`
