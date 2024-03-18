@@ -62,6 +62,8 @@ Celle-ci nécessite :
 | `/banperm`      | Bannir un joueur définitivement                                      | `kitffa.permissions.commands.banperm`      |
 | `/bablist`      | Affiche la liste des joueurs bannis                                  | `kitffa.permissions.commands.banlist`      |
 | `/unban`        | Débannir un joueur                                                   | `kitffa.permissions.commands.unban`        |
+| `/kitmodify`    | Modifier le kit                                                      | `kitffa.permissions.commands.kitmodify`    |
+| `/kit`          | Permet au joueur d'équiper le kit                                    | `kitffa.permissions.commands.kit`          |
 
 Vous pouvez aussi supprimer des commands dans le `config.yml`, en suivant cette liste :
 ```yaml
@@ -108,3 +110,14 @@ combatlogger:
 Les commandes **(mute, unmute, mutelist)** sont disponibles et sont **configurables** dans le fichier `commands.yml` ainsi que les **messages** dans `message.yml`
 #### Ban:
 Les commandes **(ban, banperm, banlist, unban)** sont disponibles et sont **configurables** dans le fichier `commands.yml` ainsi que les **messages** dans `message.yml`
+
+## Kits :
+- Vous pouvez modifier le kit avec la commande `/kitmodify`, qui prendra votre inventaire actuel et le mettra au kit.
+- Le kit sera automatiquement donné au joueur quand on sort de la zone protégée du ffa ou lorsque le joueur éxecute la commande en dehors de la zone protégée du ffa.
+- Vous avez le choix d'activer/désactiver le cooldown du kit dans la config ainsi que le temps du cooldown :
+```yaml
+kit:
+  cooldown:
+    enabled: true
+    time: 5
+```
