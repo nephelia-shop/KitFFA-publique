@@ -34,3 +34,8 @@ combatlogger:
     - "lobby"
     - "lobbytp"
     - "rekit"
+
+kit:
+  cooldown:
+    enabled: true
+    time: 5

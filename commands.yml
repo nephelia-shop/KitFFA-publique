@@ -99,3 +99,17 @@ commands:
     enabled: true
     description: "Unban un joueur"
     usage: "/unban (joueur)"
+    aliases:
+      - "deban"
+  kitmodify:
+    name: "kitmodify"
+    enabled: true
+    description: "Modifier le kit du FFA"
+    usage: "/kitmodify"
+  kit:
+    name: "kit"
+    enabled: true
+    description: "Prendre le kit"
+    usage: "/kit"
+    aliases:
+      - "rekit"

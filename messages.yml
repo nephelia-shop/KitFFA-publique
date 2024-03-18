@@ -12,6 +12,15 @@ others:
   command-not-enabled:
     messageType: "message"
     message: "§cLa commande est désactivée"
+  kit-claimed:
+    messageType: "title"
+    message: "§6Kit\n§fKit FFA reçu"
+  kit-cooldown:
+    messageType: "message"
+    message: "§cCooldown - Vous devez attendre {SECOND} seconde(s)"
+  kit-modified:
+    messageType: "message"
+    message: "§aLe kit du FFA a bien été modifié"
 
 leagues:
   rankup:
@@ -110,8 +119,7 @@ moderation:
     messageType: "message"
     message: "§f- Vous avez bien banni §6{NAME} §fpendant §6{DAY} jour(s) {HOUR} heure(s) et {MINUTE} minute(s) et {SECOND} seconde(s) §fpour §6{RAISON}"
   banned-screen-message:
-    message: "§7- §fVous êtes banni par §6{STAFF}\n\n§6Raison : §f{RAISON}\n§6Expiration : {EXPIRATION}
-    "
+    message: "§7- §fVous êtes banni par §6{STAFF}\n\n§6Raison : §f{RAISON}\n§6Expiration : {EXPIRATION}"
   perm-expiration:
     message: "§cDéfinitive"
 
