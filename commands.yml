@@ -79,3 +79,18 @@ commands:
     enabled: true
     description: "Unmute un joueur mute"
     usage: "/unmute (joueur)"
+  ban:
+    name: "ban"
+    enabled: true
+    description: "Bannir un joueur"
+    usage: "/ban (joueur) (jour) (heures) (minutes) (secondes) (raison)"
+  banlist:
+    name: "banlist"
+    enabled: true
+    description: "Afficher la liste des joueurs bannis"
+    usage: "/banlist"
+  banperm:
+    name: "banperm"
+    enabled: true
+    description: "Bannir un joueur définitivement"
+    usage: "/banperm (joueur)"

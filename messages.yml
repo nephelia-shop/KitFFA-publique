@@ -85,6 +85,35 @@ moderation:
   mute:
     messageType: "message"
     message: "§cVous êtes mute pendant §6{DAY} jour(s), {HOUR} heure(s), {MINUTE} minute(s), {SECOND} seconde(s) §cpar §6{STAFF} §cpour §6{RAISON}"
+  ban-list-header:
+    messageType: "message"
+    message: "§7- §fListe des joueurs bannis :\n"
+  ban-list:
+    messageType: "message"
+    message: "§7- §6{NAME} §fpour §6{RAISON} §fpar §6{STAFF} §fjusqu'au §6{EXPIRATION}\n"
+  not-banned:
+    messageType: "message"
+    message: "§c{TARGET} n'est pas banni"
+  unbanned:
+    messageType: "message"
+    message: "§a{TARGET} a bien été débanni"
+  #Quand on fait une commande sans raison, ce message sera la raison
+  no-reason:
+    message: "Raison non spécifiée."
+  banned-perm:
+    messageType: "message"
+    message: "§a{TARGET} a bien été banni définitivement"
+  already-banned:
+    messageType: "message"
+    message: "§c{TARGET} est déjà banni"
+  banned:
+    messageType: "message"
+    message: "§f- Vous avez bien banni §6{NAME} §fpendant §6{DAY} jour(s) {HOUR} heure(s) et {MINUTE} minute(s) et {SECOND} seconde(s) §fpour §6{RAISON}"
+  banned-screen-message:
+    message: "§7- §fVous êtes banni par §6{STAFF}\n\n§6Raison : §f{RAISON}\n§6Expiration : {EXPIRATION}
+    "
+  perm-expiration:
+    message: "§cDéfinitive"
 
 commands:
   ffa:
