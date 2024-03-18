@@ -94,3 +94,8 @@ commands:
     enabled: true
     description: "Bannir un joueur définitivement"
     usage: "/banperm (joueur)"
+  unban:
+    name: "unban"
+    enabled: true
+    description: "Unban un joueur"
+    usage: "/unban (joueur)"
