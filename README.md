@@ -64,7 +64,7 @@ Celle-ci nécessite :
 | `/unban`        | Débannir un joueur                                                   | `kitffa.permissions.commands.unban`        |
 | `/kitmodify`    | Modifier le kit                                                      | `kitffa.permissions.commands.kitmodify`    |
 | `/kit`          | Permet au joueur d'équiper le kit                                    | `kitffa.permissions.commands.kit`          |
-| `/setffazone`   | Permet de modifier la zone portégée ( /setffazone (a / b / center) ) | `kitffa.permissions.commands.setffazone`   |
+| `/setffazone`   | Permet de modifier la zone protégée ( /setffazone (a / b / center) ) | `kitffa.permissions.commands.setffazone`   |
 
 Vous pouvez aussi supprimer des commands dans le `config.yml`, en suivant cette liste :
 ```yaml
@@ -134,4 +134,29 @@ kit:
   cooldown:
     enabled: true
     time: 5
+```
+### Heal : 
+`config.yml`
+#### Potions : 
+Vous pouvez l'activer/désactiver, modifier le nombre de cœurs à ajouter ainsi que le rayon de la potion 
+```yaml
+  potions:
+    enabled: true
+    # 3 cœurs
+    heal: 6
+    size:
+      x: 4.125
+      y: 2.125
+      z: 4.125
+      #4 blocs
+      max: 16
+```
+#### Soupes :
+Vous pouvez l'activer/désactiver, modifier le nomrbe de cœurs et l'item 
+```yaml
+  soup:
+    item: "beetroot_soup"
+    enabled: true
+    # 2 cœurs
+    heal: 4
 ```
