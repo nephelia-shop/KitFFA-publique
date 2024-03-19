@@ -64,6 +64,7 @@ Celle-ci nécessite :
 | `/unban`        | Débannir un joueur                                                   | `kitffa.permissions.commands.unban`        |
 | `/kitmodify`    | Modifier le kit                                                      | `kitffa.permissions.commands.kitmodify`    |
 | `/kit`          | Permet au joueur d'équiper le kit                                    | `kitffa.permissions.commands.kit`          |
+| `/setffazone`   | Permet de modifier la zone portégée ( /setffazone (a / b / center) ) | `kitffa.permissions.commands.setffazone`   |
 
 Vous pouvez aussi supprimer des commands dans le `config.yml`, en suivant cette liste :
 ```yaml
@@ -74,6 +75,20 @@ unregister-commands:
 ```
 
 ## Systèmes :
+### Zone : 
+La zone protégée du kitffa est modifiable avec une commande /setffazone a | b | center, afin qu'elle marche vous devez mettre :
+- Position A : `/setffazone a`
+- Position B : `/setffazone b`
+- Centre de la zone : `/setffazone center`
+Chaque élement est requis afin de créer la zone, une fois tous les élements fournis, la zone sera opérative.
+Vous pouvez aussi choisir d'activer ou de désactiver les protections du monde ffa dans `config.yml`, permission pour bypass `kitffa.permissions.bypass-protections`
+```yaml
+kit-ffa-protections:
+  damage: true
+  hunger: true
+  place: true
+  break: true
+```
 ### Combat-Logger:
 Totalement configurables, paramètres sur `config.yml` et messages sur `messages.yml`
 #### Paramètres :
@@ -110,8 +125,7 @@ combatlogger:
 Les commandes **(mute, unmute, mutelist)** sont disponibles et sont **configurables** dans le fichier `commands.yml` ainsi que les **messages** dans `message.yml`
 #### Ban:
 Les commandes **(ban, banperm, banlist, unban)** sont disponibles et sont **configurables** dans le fichier `commands.yml` ainsi que les **messages** dans `message.yml`
-
-## Kits :
+### Kits :
 - Vous pouvez modifier le kit avec la commande `/kitmodify`, qui prendra votre inventaire actuel et le mettra au kit.
 - Le kit sera automatiquement donné au joueur quand on sort de la zone protégée du ffa ou lorsque le joueur éxecute la commande en dehors de la zone protégée du ffa.
 - Vous avez le choix d'activer/désactiver le cooldown du kit dans la config ainsi que le temps du cooldown :
