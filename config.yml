@@ -49,3 +49,20 @@ kit:
   cooldown:
     enabled: true
     time: 5
+
+heal:
+  potions:
+    enabled: true
+    # 3 cœurs
+    heal: 6
+    size:
+      x: 4.125
+      y: 2.125
+      z: 4.125
+      #4 blocs
+      max: 16
+  soup:
+    item: "beetroot_soup"
+    enabled: true
+    # 2 cœurs
+    heal: 4

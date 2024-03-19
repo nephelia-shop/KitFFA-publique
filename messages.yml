@@ -24,6 +24,9 @@ others:
   kit-must-be-in-ffa:
     messageType: "message"
     message: "§cVous devez être hors de la zone protégée du ffa"
+  on-soup:
+    messageType: "popup"
+    message: "§6Soupe +{HEART} coeurs"
 
 leagues:
   rankup:
