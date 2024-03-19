@@ -21,6 +21,9 @@ others:
   kit-modified:
     messageType: "message"
     message: "§aLe kit du FFA a bien été modifié"
+  kit-must-be-in-ffa:
+    messageType: "message"
+    message: "§cVous devez être hors de la zone protégée du ffa"
 
 leagues:
   rankup:
