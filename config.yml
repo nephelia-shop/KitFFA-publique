@@ -23,6 +23,7 @@ kit-ffa-protections:
   hunger: true
   place: true
   break: true
+  drop: true
 
 combatlogger:
   combat-time: 10
@@ -66,3 +67,13 @@ heal:
     enabled: true
     # 2 cœurs
     heal: 4
+
+kb:
+  knockback: 0.354
+  attackCooldown: 7
+
+others:
+  #Mettez 0 si vous ne voulez pas de cooldown
+  ender-pearl-cooldown: 10
+  chat-format: "{league} {player} : §f{message}"
+  tag-format: "§o§e[§f{HEAL} §e/ §f{MAX}§e]"

@@ -27,6 +27,27 @@ others:
   on-soup:
     messageType: "popup"
     message: "§6Soupe +{HEART} coeurs"
+  enderpearl-cooldown:
+    messageType: "message"
+    message: "§cEnderpearl - Vous devez attendre {SECOND} seconde(s)"
+  enderpearl-not-inside-zone:
+    messageType: "message"
+    message: "§cEnderpearl - Vous pouvez seulement pearl en dehors de la zone protégée"
+  kill-message:
+    messageType: "message"
+    message: "{KILLER_LIGUE} {KILLER} §fvient de tuer {VICTIM_LEAGUE} {VICTIM}"
+  normal-death:
+    messageType: "message"
+    message: "{VICTIM_LEAGUE} {VICTIM} §fvient de mourrir"
+  join:
+    messageType: "popup"
+    message: "{PLAYER_LEAGUE} {PLAYER} §aVient de rejoindre le serveur"
+  quit:
+    messageType: "popup"
+    message: "{PLAYER_LEAGUE} {PLAYER} §6Vient de quitter le serveur"
+  target-never-played:
+    messageType: "message"
+    message: "§c{TARGET} ne s'est jamais connecté"
 
 leagues:
   rankup:
