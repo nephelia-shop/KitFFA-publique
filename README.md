@@ -180,7 +180,16 @@ others:
   tag-format: "§o§e[§f{HEAL} §e/ §f{MAX}§e]"
 ```
 
-# Features :
+# Features : 
+Contactez-nous sur disocrd pour les ajouter
+- Stats System
 - Anti-2v1
 - Scoreboard
-- 
+- KitFfa ranks (staff, ect)
+- Tags
+- Coin System
+- Cosmétiques
+- Settings (cps,hideplayers,hidecos,toggle-sprint)
+- Vote
+- Aut-messages
+- Events (tournaments, gambling)
