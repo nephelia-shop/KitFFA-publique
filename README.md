@@ -171,7 +171,6 @@ kb:
 1. [x] `ender-pearl-cooldown: 10` : Délai d'enderpearl
 2. [x] `chat-format` : Format dans le chat (`{league}` _est automatiquement coloré_)
 3. [x] `tag-format` : Pseudo au-dessus du joueur
-4. [x] `tag-format` : Pseudo au-dessus du joueur
 ```yaml
 others:
   #Mettez 0 si vous ne voulez pas de cooldown
