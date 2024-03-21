@@ -152,7 +152,7 @@ Vous pouvez l'activer/désactiver, modifier le nombre de cœurs à ajouter ainsi
       max: 16
 ```
 #### Soupes :
-Vous pouvez l'activer/désactiver, modifier le nomrbe de cœurs et l'item 
+Vous pouvez l'activer/désactiver, modifier le nombre de cœurs et l'item 
 ```yaml
   soup:
     item: "beetroot_soup"
@@ -160,3 +160,27 @@ Vous pouvez l'activer/désactiver, modifier le nomrbe de cœurs et l'item
     # 2 cœurs
     heal: 4
 ```
+### Kb :
+`config.yml`
+```yaml
+kb:
+  knockback: 0.354
+  attackCooldown: 7
+```
+### Autres : 
+1. [x] `ender-pearl-cooldown: 10` : Délai d'enderpearl
+2. [x] `chat-format` : Format dans le chat (`{league}` _est automatiquement coloré_)
+3. [x] `tag-format` : Pseudo au-dessus du joueur
+4. [x] `tag-format` : Pseudo au-dessus du joueur
+```yaml
+others:
+  #Mettez 0 si vous ne voulez pas de cooldown
+  ender-pearl-cooldown: 10
+  chat-format: "{league} {player} : §f{message}"
+  tag-format: "§o§e[§f{HEAL} §e/ §f{MAX}§e]"
+```
+
+# Features :
+- Anti-2v1
+- Scoreboard
+- 
