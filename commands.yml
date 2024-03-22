@@ -113,3 +113,8 @@ commands:
     usage: "/kit"
     aliases:
       - "rekit"
+  setffazone:
+    name: "setffazone"
+    enabled: true
+    description: "Modifier la zone protégée du ffa"
+    usage: "/setffazone center | a | b"

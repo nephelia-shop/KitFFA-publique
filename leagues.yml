@@ -1,5 +1,3 @@
-enabled: true
-
 leagues:
   Unranked:
     color: "§7"
