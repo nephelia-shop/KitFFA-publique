@@ -180,7 +180,7 @@ others:
 ```
 
 # Features : 
-[![Contactez-nous](https://img.shields.io/badge/Chat-On%20Discord-738BD7.svg?style=for-the-badge)](https://discord.com/invite/U4kFWHhTNR)
+[![Contactez-nous](https://img.shields.io/badge/Chat-On%20Discord-738BD7.svg?style=for-the-badge)](https://discord.gg/3TrBCZbMrf)
 - Stats System
 - Anti-2v1
 - Scoreboard
