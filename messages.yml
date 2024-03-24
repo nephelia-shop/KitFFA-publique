@@ -48,6 +48,27 @@ others:
   target-never-played:
     messageType: "message"
     message: "§c{TARGET} ne s'est jamais connecté"
+  play-time-format:
+    message: "{DAY} jour(s), {HEURE} heure(s), {MINUTE} minute(s)"
+  my-stats:
+    messageType: "message"
+    message: "§7- §fVoici vos statistiques : \n§7Kills : §f{KILLS}\n§7Deaths : §f{DEATHS}\n§7KillStreak : §f{KILLSTREAK}\n§7Kd : §f{KD}\n§7Heure de jeu : §f{PLAYTIME}"
+  target-stats:
+    messageType: "message"
+    message: "§7- §fVoici les statistiques de §7{TARGET}: \n§7Kills : §f{KILLS}\n§7Deaths : §f{DEATHS}\n§7KillStreak : §f{KILLSTREAK}\n§7Kd : §f{KD}\n§7Heure de jeu : §f{PLAYTIME}"
+  killstreak-reset:
+    messageType: "message"
+    message: "§6KILLSTREAK RESET"
+  killstreak-announce:
+    ks: [5, 10, 15, 20]
+    messageType: "message"
+    message: "§7- {PLAYER} §fest à §7{KILLSTREAK} §fKillstreak"
+  top-header:
+    messageType: "message"
+    message: "§l§a» §r§fListe des joueurs ayant le plus de {TYPE} §8(§fPage {page}/{pageMax}§8) §l§a«§r\n"
+  top:
+    messageType: "message"
+    message: "§a#{position}. §f{player} §8(§f{value}§8)§8]\n"
 
 leagues:
   rankup:

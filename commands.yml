@@ -118,3 +118,16 @@ commands:
     enabled: true
     description: "Modifier la zone protégée du ffa"
     usage: "/setffazone center | a | b"
+  stats:
+    name: "stats"
+    enabled: true
+    description: "Afficher vos statistiques ou les statistiques d'un joueur"
+    usage: "/stats (joueur=optionnel)"
+    aliases:
+      - "statistiques"
+  top:
+    #killstreak, kill, death, elo
+    name: "top"
+    enabled: true
+    description: "Afficher le top d'une catégorie"
+    usage: "/top (type) (page=optional)"
