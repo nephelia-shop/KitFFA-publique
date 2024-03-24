@@ -44,7 +44,18 @@ Celle-ci nécessite :
 - Elo gagné par kill -> `elo-per-kill: 40`
 - Elo perdu par mort -> `elo-per-death: 10`
 
-### Commandes : Configurables
+## Stats :
+1. [x] Kills 
+2. [x] Deaths 
+3. [x] Killstreak
+4. [x] PlayTime
+5. [x] Kd
+
+Commande :
+- /stats (joueur=optionnel)
+- /top (type)
+
+## Commandes : Configurables
 | Commande        | Description                                                          | Permission                                 |
 |-----------------|----------------------------------------------------------------------|--------------------------------------------|
 | `/elo`          | Afficher votre elo ou l'elo d'un joueur ainsi que sa league          | `kitffa.permissions.commands.elo`          |
@@ -65,6 +76,7 @@ Celle-ci nécessite :
 | `/kitmodify`    | Modifier le kit                                                      | `kitffa.permissions.commands.kitmodify`    |
 | `/kit`          | Permet au joueur d'équiper le kit                                    | `kitffa.permissions.commands.kit`          |
 | `/setffazone`   | Permet de modifier la zone protégée ( /setffazone (a / b / center) ) | `kitffa.permissions.commands.setffazone`   |
+| `/stats`        | Afficher vos statistiques                                            | `kitffa.permissions.commands.stats`        |
 
 Vous pouvez aussi supprimer des commands dans le `config.yml`, en suivant cette liste :
 ```yaml
@@ -171,6 +183,7 @@ kb:
 1. [x] `ender-pearl-cooldown: 10` : Délai d'enderpearl
 2. [x] `chat-format` : Format dans le chat (`{league}` _est automatiquement coloré_)
 3. [x] `tag-format` : Pseudo au-dessus du joueur
+4. [x] `tag-format` : Pseudo au-dessus du joueur
 ```yaml
 others:
   #Mettez 0 si vous ne voulez pas de cooldown
@@ -180,7 +193,7 @@ others:
 ```
 
 # Features : 
-[![Contactez-nous](https://img.shields.io/badge/Chat-On%20Discord-738BD7.svg?style=for-the-badge)](https://discord.gg/3TrBCZbMrf)
+Contactez-nous sur disocrd pour les ajouter
 - Stats System
 - Anti-2v1
 - Scoreboard
