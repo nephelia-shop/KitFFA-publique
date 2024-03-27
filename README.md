@@ -6,9 +6,7 @@
 --------------------
 
 # Installation
-1. Vous devez mettre le plugin en .phar [.phar](https://pmt.mcpe.fun/create/)/en dossier avec le plugin [devtools](https://poggit.pmmp.io/p/DevTools/) dans le dossier **plugins**.
-2. Installez le [pack](https://github.com/tedo0627/InventoryUIResourcePack/releases/) pour les inventaires, et mettez-le dans le dossier `resource_packs`.
-3. Ouvrez le fichier `resource_packs.yml` et mettez `force_resources: true` et ajoutez dans `resource_stack`: `InventoryUIResourcePack.mcpack`
+1. Vous devez mettre le plugin en .phar [.phar](https://pmt.mcpe.fun/create/)/en dossier avec le plugin [devtools](https://poggit.pmmp.io/p/DevTools/) dans le dossier **plugins**
 
 # Configurations:
 | **Type**         | **Configuration**          | **Informations**                                                                                       |
@@ -89,6 +87,32 @@ kit-ffa-protections:
   place: true
   break: true
 ```
+### Scoreboard:
+`/scoreboard` : Commande pour activer/désactiver le scoreboard
+```yaml
+scoreboard:
+  title: "§l§sNéphelia FFA"
+  # Liste des lignes du scoreboard
+  # Voici la liste des tags utilisables :
+  # {player} → Mom du joueur
+  # {league} → Ligue coloré du joueur
+  # {elo} → Elo du joueur
+  # {players_count} → Nombre de joueurs connectés
+  lines:
+    1: " "
+    2: "§s{player}"
+    3: " "
+    4: "§fLigue§8: {league}"
+    5: "§fElo§8: {elo}"
+    6: "§fConnectés§8: §s{players_count}"
+    7: "  "
+    8: "§snephelia.fr"
+  settings:
+    update-time: 30
+```
+- `update-time` : update du scoreboard des joueurs tous les x milliseconde
+- `title` : Titre du scoreboard
+- `lines` : Lignes avec paramètres indiqués dans la config
 ### Combat-Logger:
 Totalement configurables, paramètres sur `config.yml` et messages sur `messages.yml`
 #### Paramètres :
@@ -171,6 +195,7 @@ kb:
 1. [x] `ender-pearl-cooldown: 10` : Délai d'enderpearl
 2. [x] `chat-format` : Format dans le chat (`{league}` _est automatiquement coloré_)
 3. [x] `tag-format` : Pseudo au-dessus du joueur
+4. [x] `tag-format` : Pseudo au-dessus du joueur
 ```yaml
 others:
   #Mettez 0 si vous ne voulez pas de cooldown
@@ -180,15 +205,12 @@ others:
 ```
 
 # Features : 
-[![Contactez-nous](https://img.shields.io/badge/Chat-On%20Discord-738BD7.svg?style=for-the-badge)](https://discord.gg/3TrBCZbMrf)
-- Stats System
-- Anti-2v1
-- Scoreboard
+Contactez-nous sur discord pour les ajouter
 - KitFfa ranks (staff, ect)
 - Tags
 - Coin System
 - Cosmétiques
-- Settings (cps,hideplayers,hidecos,toggle-sprint)
+- Settings (cps,hide players,hide cos,toggle-sprint)
 - Vote
 - Aut-messages
 - Events (tournaments, gambling)
