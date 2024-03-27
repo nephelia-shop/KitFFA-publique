@@ -72,6 +72,26 @@ kb:
   knockback: 0.354
   attackCooldown: 7
 
+scoreboard:
+  title: "§l§sNéphelia FFA"
+  # Liste des lignes du scoreboard
+  # Voici la liste des tags utilisables :
+  # {player} → Mom du joueur
+  # {league} → Ligue coloré du joueur
+  # {elo} → Elo du joueur
+  # {players_count} → Nombre de joueurs connectés
+  lines:
+    1: " "
+    2: "§s{player}"
+    3: " "
+    4: "§fLigue§8: {league}"
+    5: "§fElo§8: {elo}"
+    6: "§fConnectés§8: §s{players_count}"
+    7: "  "
+    8: "§snephelia.fr"
+  settings:
+    update-time: 30
+
 others:
   #Mettez 0 si vous ne voulez pas de cooldown
   ender-pearl-cooldown: 10

@@ -48,6 +48,12 @@ others:
   target-never-played:
     messageType: "message"
     message: "§c{TARGET} ne s'est jamais connecté"
+  scoreboard-enable:
+    messageType: "message"
+    message: "§aVous venez d'activer le scoreboard avec succès !"
+  scoreboard-disable:
+    messageType: "message"
+    message: "§cVous venez de désactiver le scoreboard avec succès !"
 
 leagues:
   rankup:

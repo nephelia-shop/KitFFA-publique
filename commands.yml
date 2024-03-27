@@ -118,3 +118,8 @@ commands:
     enabled: true
     description: "Modifier la zone protégée du ffa"
     usage: "/setffazone center | a | b"
+  scoreboard:
+    name: "scoreboard"
+    enabled: true
+    description: "Activer/Désactiver le scoreboard"
+    usage: "/scoreboard"
